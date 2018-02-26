@@ -4,9 +4,10 @@ import { BrowserModule } from "@angular/platform-browser";
 import { HttpModule } from "@angular/http";
 import { AppComponent } from "./app.component";
 import { FotoModule } from "./foto/foto.module";
+import { PanelModule } from './panel/panel.module';
 
 @NgModule({
-    imports: [BrowserModule, FotoModule, HttpModule],
+    imports: [BrowserModule, FotoModule, HttpModule, PanelModule],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
