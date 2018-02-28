@@ -2,11 +2,5 @@
     <h1 class="text-center">Alurapic</h1>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-md-3" *ngFor="let foto of fotos">
-            <panel [titulo]="foto.titulo">
-                <foto [url]="foto.url" [titulo]="foto.titulo"></foto>
-            </panel>
-        </div>
-    </div>
+   <router-outlet></router-outlet>
 </div>
