@@ -1,9 +1,11 @@
-﻿<input class="form-control" #filter (keyup)="0" placeholder="Filter by title">
-<br>
-<div class="row">
-    <div class="col-md-3" *ngFor="let foto of fotos|titleFilter:filter.value">
-        <panel [titulo]="foto.titulo">
-            <foto [url]="foto.url" [titulo]="foto.titulo"></foto>
-        </panel>
+﻿<div class="container">
+    <input class="form-control" #filter (keyup)="0" placeholder="Filter by title">
+    <br>
+    <div class="row">
+        <div class="col-md-3" *ngFor="let foto of fotos|titleFilter:filter.value">
+            <panel [titulo]="foto.titulo">
+                <foto [url]="foto.url" [titulo]="foto.titulo"></foto>
+            </panel>
+        </div>
     </div>
 </div>

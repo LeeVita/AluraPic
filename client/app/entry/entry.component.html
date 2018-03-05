@@ -1,1 +1,21 @@
-﻿
+﻿<div class="container">
+    <form class="row" (submit)="save($event)">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Title</label>
+                <input class="form-control" autocomplete="off" name="title" [(ngModel)]="photo.titulo">
+            </div>
+            <div class="form-group">
+                <label>URL</label>
+                <input class="form-control" autocomplete="off" name="url" [(ngModel)]="photo.url">
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" autocomplete="off" name="description" [(ngModel)]="photo.descricao"></textarea>
+            </div>
+            <div class="text-rigth">
+                <button type="submit" class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
